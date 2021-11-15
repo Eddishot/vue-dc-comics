@@ -2,7 +2,7 @@
     <div class="background-color">
         <img src="../assets/jumbotron.jpg" alt="jumbotron">
         <div class="main-container">
-            <h1> CURRENT SERIES</h1>
+            <h3> CURRENT SERIES</h3>
             <div class="card-comic-container" v-for="comic, i in comicsList" :key="i">
                 <div>
                     <img :src="comic.thumb"  :alt="comic.series">
@@ -126,7 +126,7 @@ export default{
         img{
             object-fit:cover;
             width:100%;
-            height:330px;
+            height:280px;
             object-position:top;
 
         }
@@ -141,7 +141,7 @@ export default{
             padding: 8px 0;
             gap:10px;
 
-            h1{
+            h3{
                 position:absolute;
                 left:0;
                 top:-45px;
@@ -152,7 +152,7 @@ export default{
 
             .card-comic-container{
                 width: calc(100% / 6 - 10px);
-                margin: 13px 0;
+                margin: 25px 0;
                 div{
                     height:160px;
                     img{
